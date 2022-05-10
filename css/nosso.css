@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+/* body{
+  background-image: url("../img/");
+  background-repeat: no-repeat;
+  background-size:cover;
+} */
+
+
+/* .fundobg{
+  opacity: 0.9;
+} */
+
+body {
+  background-color: #dfe9f5;
+
+}
+
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+nav {
+  padding: 10px;
+
+}
+
+.intro {
+  background-color: #222222;
+  padding: 0px 0px 0px;
+}
+
+hr {
+  width: 100px;
+}
+
+#imagesenna {
+  width: 100%;
+}
+
+
+/* Botão subir para top */
+#btnTop {
+  position: fixed;
+  bottom: 18px;
+  right: 30px;
+  height: 60px;
+  width: 60px;
+  background: #ccc;
+  border: none;
+  border-radius: 100%;
+
+}
+
+#btnTop img {
+  width: 30px;
+}
+
+
+/* CSS João Vitor */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+div.apoie-secoes {
+  margin-top: 2em;
+}
+
+section#apoie-caixa-texto {
+
+  border: 1px #222 solid;
+  border-radius: .9em;
+  padding: 1em;
+  margin-bottom: 1em;
+
+}
+
+
+button.btn-apoie {
+  padding: .6em;
+  color: #fff;
+  background-color: #222;
+  border-radius: .7em;
+  width: 8.5em;
+  margin-bottom: 1.5em;
+}
+
+button.btn-apoie:hover {
+  color: #222;
+  background-color: #fff;
+  border: 1px #222 solid;
+  transition: 750ms;
+}
+
+button.btn-produtos {
+  padding: .6em;
+  color: #fff;
+  background-color: #252525;
+  border-radius: .7em;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section a {
+  text-decoration: none;
+  color: #222;
+}
+
+/* CSS Guilherme */
+section.bloco_instituto1,
+section.bloco_instituto2,
+section.bloco_instituto3 {
+  margin-bottom: 60px;
+}
+
+p.texto-simples-instituto {
+  font-size: larger;
+}
+
+.titulo-iniciativas {
+  font-size: 50px;
+}
+
+
+#divfooter {
+  background-color: #181717;
+  padding: 0px 40px 0px 40px;
+}
+
+/* Light Box Modal */
+@media screen and (max-width: 768px) {
+  .modal {
+    display: none !important;
+  }
+}
+
+#dialog p {
+  font-size: 18px;
+  line-height: 160%;
+}
+
+#dialog h2,
+#dialog a.btn {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9000;
+  background: rgba(0, 0, 0, .9);
+  display: none;
+}
+
+#boxes .window {
+  position: fixed;
+  left: 0;
+  top: 0;
+  /*width: 50% !important;
+  max-width: 700px !important;*/
+  display: none;
+  z-index: 9999;
+  padding: 0px !important;
+  border-radius: 0px;
+  text-align: left;
+  background: #fff;
+}
+
+#boxes #dialog {
+  /*width: 50% !important;
+  max-width: 700px !important;*/
+  padding: 0px;
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15pt;
+}
+
+#boxes #dialog a.close {
+  opacity: 1 !important;
+}
+
+#popupfoot {
+  font-size: 16pt;
+  position: absolute;
+  top: -10px;
+  width: 30px;
+  right: -10px;
+  color: #fff;
+  border-radius: 50%;
+  height: 20px;
+}
+
+#popupfoot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  #dialog {
+    left: 50% !important;
+    width: 80vw !important;
+    max-width: 80vw !important;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
+
+
+  #dialog a.btn {
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+    padding: 11px 20px;
+  }
+
+
+  .senninha-netflix {
+    height: 80vh !important;
+    background-image: url('https://senninha.com.br/_img/banners/netflix/bg-mobile-banner-novo.png');
+  }
+
+
+  @media (max-width: 1024px) {
+    header {
+      margin-top: 0;
+    }
+
+    .banner-netflix {
+      position: relative;
+      top: 13%;
+
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .senninha-netflix {
+      height: 100vh !important;
+      background-image: url('https://senninha.com.br/_img/banners/netflix/bg-banner-novo.png');
+    }
+
+    .banner-netflix {
+      position: relative;
+      top: 16%;
+      padding: 6vh 0 16vh 0;
+    }
+
+  }
+
+  .vertical-align {
+    display: flex;
+    align-items: center;
+  }
+
+  .bottom-align {
+    display: flex;
+    align-items: flex-end !important;
+
+  }
+
+
+}

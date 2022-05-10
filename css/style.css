@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+@font-face {
+    font-family: 'VAG Rounded';
+    src: url('../fonts/VagRoundedBlack.woff2') format('woff2'),
+        url('../fonts/VagRoundedBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'chevin_proextrabold';
+    src: url('../fonts/g-type_-_chevinpro-extrabold-webfont.woff2') format('woff2'),
+        url('../fonts/g-type_-_chevinpro-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'chevin_prolight';
+    src: url('../fonts/g-type_-_chevinpro-light-webfont.woff2') format('woff2'),
+        url('../fonts/g-type_-_chevinpro-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rodgerbold';
+    src: url('../fonts/rodger-bold-webfont.woff2') format('woff2'),
+        url('../fonts/rodger-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+@font-face {
+    font-family: 'riffic_freebold';
+    src: url('../../_font/rifficfree-bold-webfont.eot');
+    src: url('../../_font/rifficfree-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../../_font/rifficfree-bold-webfont.woff2') format('woff2'),
+        url('../../_font/rifficfree-bold-webfont.woff') format('woff'),
+        url('../../_font/rifficfree-bold-webfont.ttf') format('truetype'),
+        url('../../_font/rifficfree-bold-webfont.svg#riffic_freebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'curse_casualregular';
+    src: url('../../_font/curse_casual-webfont.woff2') format('woff2'),
+        url('../../_font/curse_casual-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    z-index: 2;
+    width: 100%;
+    margin-top: 50px;
+    background: #c00411;
+}
+
+.navbar {
+    padding: 0;
+    text-align: center;
+    margin: 0 auto !important;
+    width: 100%;
+    max-width: 1170px;
+}
+
+
+.navbar-brand {
+    margin-top: -2.25em;
+    margin-bottom: -2em;
+    margin-left: .75em;
+    z-index: 2;
+}
+
+.navbar-toggler {
+    outline: 0;
+    padding: .5em 1em;
+    margin: .75em .75em .75em 0;
+    border: 0;
+}
+
+.navbar-toggler-icon {
+    background: #FFF;
+    width: 1.5em;
+    height: .2em;
+    display: block;
+    margin: 0 0 .3em;
+}
+
+.navbar-toggler-icon:last-child {
+    margin-bottom: 0;
+}
+
+.navbar-collapse {
+    background: #D4000F;
+}
+
+.navbar-nav {
+    padding: 3.5em 0em 1em;
+    color: #FFF;
+    font-size: 1.4em;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: table;
+    width: 100%;
+}
+
+.navbar-nav li {
+    margin: 0 0 1em 0;
+}
+
+.navbar-nav a {
+    display: block;
+    padding: .5em 0 .5em 4.5em;
+    background-repeat: no-repeat;
+    background-position: .75em 0;
+    background-size: contain;
+}
+
+.menu-home {
+    background-image: url('../images/icone-home.png');
+}
+
+.menu-videos {
+    background-image: url('../images/icone-videos.png');
+}
+
+.menu-pista-maluca {
+    background-image: url('../images/icone-pista-maluca.png');
+}
+
+.menu-eventos {
+    background-image: url('../images/icone-eventos.png');
+}
+
+.menu-jogos {
+    background-image: url('../images/icone-jogos.png');
+}
+
+.menu-turma {
+    background-image: url('../images/icone-turma.png');
+}
+
+.menu-jogos-scratch {
+    background-image: url('../images/icone-jogos-scratch.png');
+}
+
+.menu-atividades {
+    background-image: url('../images/icone-atividades.png');
+}
+
+.menu-contato {
+    background-image: url('../images/icone-contato.png');
+}
+
+
+/* LGPD */
+#box-lgpd {
+    background: #111;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    z-index: 9999;
+}
+
+#box-lgpd p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #FFF;
+    margin: 0;
+}
+
+#box-lgpd button.btn-aceitar {
+    width: auto !important;
+    padding: 5px 18px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: #c00411;
+    color: #FFF;
+    font-family: 'riffic_freebold';
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    text-align: center;
+    border: 0;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    letter-spacing: 2px;
+}
+
+
+#box-lgpd .mensagem {
+    padding: 30px 0;
+}
+
+
+/* Home */
+#banner-principal .carousel-inner {
+    display: -webkit-box;
+}
+
+.banner1 {
+    background-repeat: no-repeat;
+    background-position: 40% 0;
+    background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .game-aventura {
+        background-position: 48% 0;
+        background-size: auto;
+    }
+}
+
+.logo-pista-maluca {
+    margin: 5em auto 35em;
+    display: block;
+}
+
+/* Gloobinho*/
+.gloobinho {
+    font-family: 'rodgerbold';
+    text-align: center;
+    color: #FFF;
+    text-shadow: 7px 7px 12px rgba(0, 0, 0, .5);
+}
+
+.logo-gloobinho {
+    background: url('../images/bg-gloobinho.jpg') right center;
+    background-size: cover;
+}
+
+.logo-gloobinho img {
+    margin: 50px 0;
+    width: 60%;
+}
+
+.horario-gloobinho {
+    background: url('../images/bg-horario-gloobinho.jpg') left center repeat-x #8c070d;
+    background-size: contain;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.horario-gloobinho h2 {
+    font-size: 3.8em;
+    line-height: 1;
+    margin: 30px 0;
+}
+
+.horario-gloobinho h3 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0 0 30px;
+}
+
+.horario-gloobinho h2 .horario-gloobinho h3 {
+    font-family: 'VAG Rounded', 'chevin_proextrabold' !important;
+}
+
+.vag-font {
+    font-family: 'VAG Rounded' !important;
+}
+
+section h2 {
+    color: #FFF;
+    font-family: 'chevin_proextrabold';
+    font-size: 3em;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin: .75em 0 .5em;
+}
+
+/* Sinopse */
+.sinopse {
+    background: #009bdb;
+    padding: 0 0 14.63px;
+}
+
+.sinopse p {
+    font-family: 'chevin_prolight';
+    font-size: 2em;
+    line-height: 1.15;
+    color: #FFF;
+    margin: 0 0 1.3em 0;
+    text-align: justify;
+}
+
+/* Personagens */
+.personagens {
+    background: #a65073;
+    padding: 0 0 0;
+    text-align: center;
+}
+
+.personagens .slick-arrow {
+    background-size: contain;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    width: 10px;
+    height: 10px;
+    text-indent: -9999px;
+    position: absolute;
+    top: 50%;
+    margin-top: -31px;
+    z-index: 999;
+}
+
+.personagens .slick-prev {
+    background-image: url('../img/next.png');
+    left: 10px;
+
+}
+
+.personagens .slick-next {
+    background-image: url('../img/next.png');
+    right: 10px;
+
+
+}
+
+.personagens .slick-slide {
+    transition: all 300ms ease;
+    transform: scale(.5);
+    opacity: 0.6;
+}
+
+.personagens .slick-slide.slick-center {
+    transform: scale(1.3);
+    opacity: 1;
+}
+
+.slick-list.draggable {
+    padding: 200px 0 !important;
+}
+
+.personagens .link-modal {
+    outline: 0;
+}
+
+.personagens .nome-personagem {
+    font-family: 'chevin_proextrabold';
+    font-size: 3em;
+    color: #FFF;
+}
+
+.wrap-personagens .modal p {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.modal-dialog {
+    z-index: 9999;
+}
+
+@media (min-width: 1024px) {
+    .wrap-personagens .modal img {
+        float: left;
+        margin-right: 0px;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .wrap-personagens .modal p {
+        padding-right: 25px;
+    }
+
+    .modal-dialog {
+        max-width: 40%;
+    }
+
+}
+
+.wrap-personagens .modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'chevin_proextrabold';
+    color: #FFF;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.wrap-personagens .modal-header {
+    background: #c00411;
+}
+
+
+
+@media (min-width: 576px) {
+
+    /* Header */
+    .navbar-nav li {
+        width: 33%;
+        display: inline-block;
+    }
+
+    .navbar-nav li:nth-child(n+7) {
+        margin: 0;
+    }
+
+
+
+    @media (min-width: 768px) {
+
+        /* Header */
+        .navbar-nav a {
+            padding: 1.25em 0 1.25em 5em;
+        }
+
+        section h2 {
+            font-size: 4.8em;
+        }
+
+        /* Personagens */
+        .personagens .slick-arrow {
+            width: 25px;
+            height: 62px;
+        }
+
+
+    }
+
+    @media (min-width: 992px) {
+
+        /* Header */
+        header {
+            position: absolute;
+            margin-top: 55px;
+        }
+
+        .navbar-brand {
+            margin-left: 1.15em;
+            margin-top: -73px;
+            position: relative;
+            bottom: -21px;
+        }
+
+        .navbar-collapse {
+            background: none;
+        }
+
+        .navbar-nav {
+            float: left;
+            font-size: 1.2em;
+        }
+
+        .navbar-nav {
+            padding: 0;
+        }
+
+        .navbar-nav li,
+        .navbar-nav li:nth-child(n+7) {
+            width: auto;
+            display: inline-block;
+            margin: 0;
+        }
+
+        .navbar-nav li:last-child {
+            margin: 0;
+        }
+
+        .navbar-nav a {
+            padding: 4.7em .9em .15em;
+            background-position: center -3px;
+            background-size: auto 66px;
+        }
+
+        .navbar-nav .menu-turma {
+            padding-left: 1.75em;
+            padding-right: 1.75em;
+        }
+
+
+
+
+    }
+
+    @media (min-width: 1200px) {
+
+        /* Header */
+        .navbar-nav {
+            margin: 0 0 0 1em;
+        }
+
+        .navbar-nav li,
+        .navbar-nav li:nth-child(n+7) {
+            margin: 0 0 0 0;
+        }
+
+        .navbar-nav a {
+            padding: 55px 0.75vw 1px;
+            font-size: 14px;
+        }
+
+
+
+        /* Personagens */
+        .personagens .nome-personagem {
+            font-size: 4.1em;
+        }
+
+
+    }   
+    }
